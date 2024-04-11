@@ -18,20 +18,20 @@ export class HomePage {
   ngOnInit() {}
 
   sumar(a: number, b: number): void {
-    this.resultado = this.calculadoraService.sumar(a, b);
+    this.resultado = this.calculadoraService.sumarService(a, b);
   }
 
   restar(a: number, b: number): void {
-    this.resultado = this.calculadoraService.restar(a, b);
+    this.resultado = this.calculadoraService.restarService(a, b);
   }
 
   multiplicar(a: number, b: number): void {
-    this.resultado = this.calculadoraService.multiplicar(a, b);
+    this.resultado = this.calculadoraService.multiplicarService(a, b);
   }
 
   dividir(a: number, b: number): void {
     try {
-      this.resultado = this.calculadoraService.dividir(a, b);
+      this.resultado = this.calculadoraService.dividirService(a, b);
     } catch (error: any) {
       //console.error(error.message);
       this.resultado = NaN;
