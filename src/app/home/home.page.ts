@@ -21,6 +21,10 @@ export class HomePage {
     this.resultado = this.calculadoraService.sumarService(a, b);
   }
 
+  sumarTest(a: number, b: number): number {
+    return a+b+3;
+  }
+
   restar(a: number, b: number): void {
     this.resultado = this.calculadoraService.restarService(a, b);
   }

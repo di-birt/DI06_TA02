@@ -47,6 +47,14 @@ describe('HomePage', () => {
 
   //Espiamos el método sumar, por tanto, no ejecutará la lógica de ese método.
   //Se espera que sumar reciba los números 2 y 3 como parámetros
+  it('debería llamar al método sumarTest correctamente con 2 números', () => {
+    spyOn(component, 'sumarTest').and.callThrough().and.returnValue(5);
+    component.sumarTest(2,3);
+    expect(component.sumarTest).toHaveBeenCalledWith(2, 3);
+  });
+
+  //Espiamos el método sumar, por tanto, no ejecutará la lógica de ese método.
+  //Se espera que sumar reciba los números 2 y 3 como parámetros
   it('debería llamar al método sumar correctamente con 2 números', () => {
     spyOn(component, 'sumar');
     component.sumar(2,3);
