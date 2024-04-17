@@ -17,35 +17,35 @@ export class HomePage {
 
   ngOnInit() {}
 
-  // sumar(a: number, b: number): void {
-  //   this.resultado = this.calculadoraService.sumarService(a, b);
-  // }
+  sumar(a: number, b: number): void {
+    this.resultado = this.calculadoraService.sumarService(a, b);
+  }
 
-  // sumarTest(a: number, b: number): number {
-  //   return a+b+3;
-  // }
+  sumarTest(a: number, b: number): number {
+    return a+b+3;
+  }
 
-  // restar(a: number, b: number): void {
-  //   this.resultado = this.calculadoraService.restarService(a, b);
-  // }
+  restar(a: number, b: number): void {
+    this.resultado = this.calculadoraService.restarService(a, b);
+  }
 
-  // multiplicar(a: number, b: number): void {
-  //   this.resultado = this.calculadoraService.multiplicarService(a, b);
-  // }
+  multiplicar(a: number, b: number): void {
+    this.resultado = this.calculadoraService.multiplicarService(a, b);
+  }
 
-  // dividir(a: number, b: number): void {
-  //   try {
-  //     this.resultado = this.calculadoraService.dividirService(a, b);
-  //   } catch (error: any) {
-  //     //console.error(error.message);
-  //     this.resultado = NaN;
-  //     this.mensaje = error.message;
-  //   }
-  // }
+  dividir(a: number, b: number): void {
+    try {
+      this.resultado = this.calculadoraService.dividirService(a, b);
+    } catch (error: any) {
+      //console.error(error.message);
+      this.resultado = NaN;
+      this.mensaje = error.message;
+    }
+  }
 
-  // esNumeroValido(num: any): boolean {
-  //   return typeof num === 'number' && !isNaN(num);
-  // }
+  esNumeroValido(num: any): boolean {
+    return typeof num === 'number' && !isNaN(num);
+  }
 
 }
 
